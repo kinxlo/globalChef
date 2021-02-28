@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none !important;
+}
+
+:root {
+
+    /* Font/text values */
+    --font-family-segoe-ui: Segoe UI;
+    --font-style-normal: normal;
+    --font-weight-normal: normal;
+    --font-size: 21px;
+    --unnamed-character-spacing-0: 0px;
+    --line-spacing-28: 28px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #010101;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ============================== */
+
+header .cc-brand-icon {
+    width: 30px;
+}
+
+header .cc-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/2476071-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header .cc-hero::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: rgba(0,0,0,0.5);
+}
+
+nav{
+    background-color: rgba(0,0,0,0.6)
+}
+
+header .cc-hero-text{
+    z-index: 1;
+}
+
+.nav-link:hover{
+    color: #FFC72C !important;
+}
+
+.btn-outline-warning:hover{
+    background: #DA291C;
+    border-color: #DA291C;
+    color: #fff;
+}
+
+
+/* DESKTOP VIEW */
+
+/* Small devices (landscape phones) */
+@media (min-width:576px) {}
+
+/* Medium devices (tablets) */
+@media (min-width:768px) {}
+
+/* Large devices (desktops) */
+@media (min-width:992px) {}
+
+/* Extra large devices (large desktops) */
+@media (min-width:1200px) {}
+
+/* Extra large devices (large desktops) */
+@media (min-width:1920px) {}
