@@ -24,6 +24,9 @@
 
 <body>
     <header>
+        <!-- Scroll to top Button -->
+        <a href="#hero"><button class="up-button"><i class="fa fa-arrow-up"></i></button></a>
+        <!-- end of scroll to top button -->
         <nav class="navbar navbar-expand-lg px-lg-5 navbar-light fixed-top">
             <a class="navbar-brand font-weight-bold text-warning" href="#"><img
                     src="./images/PNGIX.com_chef-png_490598@2x.png" alt="img..."
@@ -54,6 +57,18 @@
                     In</button>
             </div>
         </nav>
+        <div id="hero" class="cc-hero d-flex flex-column align-items-end justify-content-end">
+            <div class="text-light text-right mb-5 px-4 cc-hero-text">
+                <p class="text-warning">Cooking is fun! We will prove it to you</p>
+                <h1 class="text-light">Get unlimited access to the world of food</h1>
+                <button type="button" data-toggle="modal" data-target="#signUp" class="btn btn-danger px-5 py-2">Get
+                    Started</button>
+            </div>
+            <div class="px-3 pt-3" style="width: 50%;">
+                <img src="./images/PNGIX.com_chef-png_1208558@2x.png" alt="img..." class="img-fluid" />
+            </div>
+        </div>
+
         <!-- ===================================================================================== -->
         <!-- LOG-IN Modal -->
         <div class="modal fade" id="logIn" data-backdrop="static" data-keyboard="false" tabindex="-1"
@@ -83,7 +98,8 @@
                             <button class="btn btn-primary w-100 px-5 py-2 mb-4" style="background: #2476B6">Continue
                                 with Facebook</button>
                             <button class="btn btn-danger w-100 px-5 py-2 cc-form-btn">Continue with Google</button>
-                            <p class="text-secondary text-center my-2">or <span style="color: #2476B6">Forgot Password</span>
+                            <p class="text-secondary text-center my-2">or <span style="color: #2476B6">Forgot
+                                    Password</span>
                             </p>
                             <hr>
                             <p class="text-center text-secondary">Don't have an account?<span class="font-weight-bold"
@@ -93,7 +109,7 @@
                     </div>
                 </div>
             </div>
-
+        </div>
             <!-- SIGN-UP Modal -->
             <div class="modal fade" id="signUp" data-backdrop="static" data-keyboard="false" tabindex="-1"
                 aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -101,12 +117,9 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="staticBackdropLabel">Sign up and start learning</h5>
-                            <button type="" class="close close-btn" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true" class="cancel-bt"><img src="./images/cancel-button.svg"
-                                        alt="img..." class="img-fluid" style="width: 15px;" /></span>
+                            <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" class="cancel-bt">&times;</span>
                             </button>
-
-
                         </div>
                         <div class="modal-body">
                             <form class="mx-auto p-2" style="width: fit-content">
@@ -140,7 +153,8 @@
                                         personal recommendations and learning tips.</p>
                                 </div>
                                 <button class="btn btn-danger w-100 px-5 py-2 cc-form-btn">Sign UP</button>
-                                <p class="text-muted w-75 mx-auto my-2" style="font-size: 8px;">By signing up, you agree
+                                <p class="text-muted w-75 mx-auto my-2" style="font-size: 8px;">By signing up, you
+                                    agree
                                     to
                                     our Terms of Use and Privacy Policy
                                 </p>
@@ -148,7 +162,8 @@
                                 <button class="btn btn-primary w-100 px-5 py-2 my-4"
                                     style="background: #2476B6">Continue
                                     with Facebook</button>
-                                <button class="btn btn-danger w-100 px-5 py-2 cc-form-btn">Continue with Google</button>
+                                <button class="btn btn-danger w-100 px-5 py-2 cc-form-btn">Continue with
+                                    Google</button>
                                 <hr>
                                 <p class="text-center text-secondary">Already have an account? <span
                                         class="font-weight-bold" style="color: #2476B6">Login</span></p>
@@ -157,20 +172,9 @@
                     </div>
                 </div>
             </div>
-
             <!-- ===================================================================================== -->
-            <div class="cc-hero d-flex flex-column align-items-end justify-content-end">
-                <div class="text-light text-right mb-5 px-4 cc-hero-text">
-                    <p class="text-warning">Cooking is fun! We will prove it to you</p>
-                    <h1 class="text-light">Get unlimited access to the world of food</h1>
-                    <button type="button" data-toggle="modal" data-target="#signUp" class="btn btn-danger px-5 py-2">Get
-                        Started</button>
-                </div>
-                <div class="px-3 pt-3" style="width: 50%;">
-                    <img src="./images/PNGIX.com_chef-png_1208558@2x.png" alt="img..." class="img-fluid" />
-                </div>
-            </div>
     </header>
+
     <main>
         <section class="cc-section-one">
             <div class="text-center container">
@@ -323,7 +327,7 @@
                 </div>
             </div>
         </section>
-        <section class="cc-section-four">
+        <section class="cc-section-four" id="section-four">
             <!-- The carocel must implement js. -->
             <div>
                 <div>
@@ -467,6 +471,9 @@
 
                 </div>
             </div>
+        </section>
+        <section class="modal-section">
+
         </section>
     </main>
 

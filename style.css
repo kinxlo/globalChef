@@ -21,6 +21,10 @@
     --line-spacing-28: 28px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 h1,
 h2,
@@ -39,6 +43,23 @@ a {
     text-decoration: none;
 }
 
+.up-button{
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    border-radius: 7px;
+    color: #000;
+    width: 30px;
+    height: 30px;
+    padding: 0.5%;
+    background: #DA291C;
+    z-index: 999;
+    visibility: hidden;
+}
+
+.show-up-button{
+    visibility:visible;
+}
 
 /* ============================== */
 
@@ -180,7 +201,7 @@ section form input, .modal-body form input {
 }
 
 .modal-body form input{
-    width: 100%;
+    width: 100%
 }
 
 textarea {
@@ -270,52 +291,7 @@ footer {
 /* ====================================================== */
 /* MODAL (SIGN IN AND LOG IN) */
 /* ====================================================== */
-.close-btn {
-    border: 1px solid red !important;
-    padding: 0 !important;
-    margin: 0.5rem 0 !important;
-}
 
-.cancel-bt {
-    color: #DA291C;
-    padding: 2px;
-}
-
-
-/* Broke my brand logo */
-
-/* img {
-    position: relative;
-    top: 1.5rem;
-    left: 5px;
-    height: 1rem;
-    width: 1rem;
-    /* padding: 15px; */
-} */
-
-::-webkit-input-placeholder {
-    padding-left: 1.5rem;
-}
-
-.terms {
-    padding-left: 10px;
-}
-
-.or {
-    padding-left: 14rem;
-}
-
-.red {
-    background-color: #DA291C;
-}
-
-.blue {
-    background-color: #2476B6;
-}
-
-.or-forg {
-    padding-left: 10.5rem;
-}
 
 /* ====================================================== */
 
