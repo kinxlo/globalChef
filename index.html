@@ -24,7 +24,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav class="navbar navbar-expand-lg px-lg-5 navbar-light fixed-top">
             <a class="navbar-brand font-weight-bold text-warning" href="#"><img
                     src="./images/PNGIX.com_chef-png_490598@2x.png" alt="img..."
                     class="cc-brand-icon img-fluid" />Global<span class="text-danger">Chef</span></a>
@@ -35,7 +35,7 @@
             </button>
 
             <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto py-2">
+                <ul class="navbar-nav mx-auto py-2">
                     <li class="nav-item active py-1">
                         <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -49,19 +49,127 @@
                         <a class="nav-link text-light" href="#">contact Us</a>
                     </li>
                 </ul>
-                <button class="btn btn-outline-warning px-5 py-2 my-5">Sign In</button>
+                <button type="button" data-toggle="modal" data-target="#logIn"
+                    class="btn btn-outline-warning px-5 py-2 my-5 my-lg-0">Sign
+                    In</button>
             </div>
         </nav>
-        <div class="cc-hero d-flex flex-column align-items-end justify-content-end">
-            <div class="text-light text-right mb-5 px-4 cc-hero-text">
-                <p class="text-warning">Cooking is fun! We will prove it to you</p>
-                <h1 class="text-light">Get unlimited access to the world of food</h1>
-                <button class="btn btn-danger px-5 py-2">Get Started</button>
+        <!-- ===================================================================================== -->
+        <!-- LOG-IN Modal -->
+        <div class="modal fade" id="logIn" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Welcome Back!</h5>
+                        <button type="" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="cancel-bt">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="mx-auto p-2" style="width: fit-content">
+                            <div class="d-flex flex-column">
+                                <div class="cc-input-div">
+                                    <i class="fas fa-user cc-form-icon"></i>
+                                    <input type="text" placeholder="Full Name" class="" />
+                                </div>
+                                <div class="cc-input-div">
+                                    <i class="fas fa-tag cc-form-icon"></i>
+                                    <input type="password" placeholder="Password" class="" />
+                                </div>
+                            </div>
+                            <button class="btn btn-danger w-100 px-5 pb-2 mt-3 cc-form-btn">Login</button>
+                            <p class="w-25 mx-auto text-center text-secondary mt-3">Or</p>
+                            <button class="btn btn-primary w-100 px-5 py-2 mb-4" style="background: #2476B6">Continue
+                                with Facebook</button>
+                            <button class="btn btn-danger w-100 px-5 py-2 cc-form-btn">Continue with Google</button>
+                            <p class="text-secondary text-center my-2">or <span style="color: #2476B6">Forgot Password</span>
+                            </p>
+                            <hr>
+                            <p class="text-center text-secondary">Don't have an account?<span class="font-weight-bold"
+                                    style="color: #2476B6">Sign
+                                    Up</span></p>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="px-3 pt-3" style="width: 50%;">
-                <img src="./images/PNGIX.com_chef-png_1208558@2x.png" alt="img..." class="img-fluid" />
+
+            <!-- SIGN-UP Modal -->
+            <div class="modal fade" id="signUp" data-backdrop="static" data-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered ">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Sign up and start learning</h5>
+                            <button type="" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true" class="cancel-bt"><img src="./images/cancel-button.svg"
+                                        alt="img..." class="img-fluid" style="width: 15px;" /></span>
+                            </button>
+
+
+                        </div>
+                        <div class="modal-body">
+                            <form class="mx-auto p-2" style="width: fit-content">
+                                <div class="d-flex flex-column">
+                                    <div class="cc-input-div">
+                                        <i class="fas fa-user cc-form-icon"></i>
+                                        <input type="text" placeholder="Full Name" class="" />
+                                    </div>
+                                    <div class="cc-input-div">
+                                        <i class="fas fa-envelope cc-form-icon"></i>
+                                        <input type="email" placeholder="Email Address" class="" />
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="cc-input-div">
+                                        <i class="fas fa-phone-alt cc-form-icon"></i>
+                                        <input type="text" placeholder="Phone Number" class="" />
+                                    </div>
+                                    <div class="cc-input-div">
+                                        <i class="fas fa-tag cc-form-icon"></i>
+                                        <input type="password" placeholder="Password" class="" />
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <!-- <div> -->
+                                    <input type="checkbox" style="width:fit-content;" />
+                                    <!-- </div> -->
+                                    <p class="text-muted mr-4 ml-1">Yes, I want to get the most out of GlobalChef by
+                                        receiving emails with
+                                        exclusive deals,
+                                        personal recommendations and learning tips.</p>
+                                </div>
+                                <button class="btn btn-danger w-100 px-5 py-2 cc-form-btn">Sign UP</button>
+                                <p class="text-muted w-75 mx-auto my-2" style="font-size: 8px;">By signing up, you agree
+                                    to
+                                    our Terms of Use and Privacy Policy
+                                </p>
+                                <p class="w-25 mx-auto my-3 text-center text-secondary">Or</p>
+                                <button class="btn btn-primary w-100 px-5 py-2 my-4"
+                                    style="background: #2476B6">Continue
+                                    with Facebook</button>
+                                <button class="btn btn-danger w-100 px-5 py-2 cc-form-btn">Continue with Google</button>
+                                <hr>
+                                <p class="text-center text-secondary">Already have an account? <span
+                                        class="font-weight-bold" style="color: #2476B6">Login</span></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+
+            <!-- ===================================================================================== -->
+            <div class="cc-hero d-flex flex-column align-items-end justify-content-end">
+                <div class="text-light text-right mb-5 px-4 cc-hero-text">
+                    <p class="text-warning">Cooking is fun! We will prove it to you</p>
+                    <h1 class="text-light">Get unlimited access to the world of food</h1>
+                    <button type="button" data-toggle="modal" data-target="#signUp" class="btn btn-danger px-5 py-2">Get
+                        Started</button>
+                </div>
+                <div class="px-3 pt-3" style="width: 50%;">
+                    <img src="./images/PNGIX.com_chef-png_1208558@2x.png" alt="img..." class="img-fluid" />
+                </div>
+            </div>
     </header>
     <main>
         <section class="cc-section-one">
@@ -89,7 +197,7 @@
                 </div>
             </div>
         </section>
-        <section class="cc-section-two">
+        <section class="cc-section-two py-5">
             <div class="text-center container">
                 <div>
                     <h2>Top Classes</h2>
@@ -99,9 +207,9 @@
                     </p>
                 </div>
                 <div class="card-group d-flex flex-column">
-                    <div class="card mx-auto" style="width: 80%;">
+                    <div class="card mx-auto" style="width: 90%;">
                         <img src="./images/davide-cantelli-jpkfc5_d-DI-unsplash@2x.png" class="card-img-top img-fluid"
-                            alt="...">
+                            alt="..." style="height: 15rem; object-fit: cover; object-position: 0 80%;">
                         <div class="card-body text-left">
                             <div class="d-flex justify-content-between">
                                 <small>300 Students</small>
@@ -122,8 +230,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mx-auto" style="width: 80%;">
-                        <img src="./images/gelato@2x.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card mx-auto" style="width: 90%;">
+                        <img src="./images/gelato@2x.png" class="card-img-top img-fluid" alt="..."
+                            style="height: 15rem; object-fit: cover; object-position: 0 80%;">
                         <div class="card-body text-left">
                             <div class="d-flex justify-content-between">
                                 <small>300 Students</small>
@@ -144,10 +253,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mx-auto" style="width: 80%;">
+                    <div class="card mx-auto" style="width: 90%;">
                         <img src="./images/plate-of-barbeques-on-dining-table-2689419@2x.png"
                             class="card-img-top img-fluid" alt="..."
-                            style="height: 270px; object-fit: cover; object-position: 0 10%;">
+                            style="height: 15rem; object-fit: cover; object-position: 0 10%;">
                         <div class="card-body text-left">
                             <div class="d-flex justify-content-between">
                                 <small>300 Students</small>
@@ -168,10 +277,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card mx-auto" style="width: 80%;">
+                    <div class="card mx-auto" style="width: 90%;">
                         <img src="./images/cooked-rice-with-fried-shrimp-in-bowl-near-glass-of-juice-3345727@2x.png"
                             class="card-img-top img-fluid" alt="..."
-                            style="height: 270px; object-fit: cover; object-position: 0 80%;">
+                            style="height: 15rem; object-fit: cover; object-position: 0 80%;">
                         <div class="card-body text-left">
                             <div class="d-flex justify-content-between">
                                 <small>300 Students</small>
@@ -239,7 +348,7 @@
                                         <i class="fab fa-twitter mx-1 cc-icon text-info"></i>
                                         <i class="fab fa-instagram mx-1 cc-icon text-danger"></i>
                                         <i class="fab fa-pinterest mx-1 cc-icon text-danger"></i>
-                                        <hr class="cc-hr-line" />
+                                        <!-- <hr class="cc-hr-line" /> -->
                                     </div>
                                 </div>
                             </div>
@@ -256,7 +365,7 @@
                                         <i class="fab fa-twitter mx-1 cc-icon text-info"></i>
                                         <i class="fab fa-instagram mx-1 cc-icon text-danger"></i>
                                         <i class="fab fa-pinterest mx-1 cc-icon text-danger"></i>
-                                        <hr class="cc-hr-line" />
+                                        <!-- <hr class="cc-hr-line" /> -->
                                     </div>
                                 </div>
                             </div>
@@ -273,7 +382,7 @@
                                         <i class="fab fa-twitter mx-1 cc-icon text-info"></i>
                                         <i class="fab fa-instagram mx-1 cc-icon text-danger"></i>
                                         <i class="fab fa-pinterest mx-1 cc-icon text-danger"></i>
-                                        <hr class="cc-hr-line" />
+                                        <!-- <hr class="cc-hr-line" /> -->
                                     </div>
                                 </div>
                             </div>
@@ -290,7 +399,7 @@
                                         <i class="fab fa-twitter mx-1 cc-icon text-info"></i>
                                         <i class="fab fa-instagram mx-1 cc-icon text-danger"></i>
                                         <i class="fab fa-pinterest mx-1 cc-icon text-danger"></i>
-                                        <hr class="cc-hr-line" />
+                                        <!-- <hr class="cc-hr-line" /> -->
                                     </div>
                                 </div>
                             </div>
@@ -307,7 +416,7 @@
                                         <i class="fab fa-twitter mx-1 cc-icon text-info"></i>
                                         <i class="fab fa-instagram mx-1 cc-icon text-danger"></i>
                                         <i class="fab fa-pinterest mx-1 cc-icon text-danger"></i>
-                                        <hr class="cc-hr-line" />
+                                        <!-- <hr class="cc-hr-line" /> -->
                                     </div>
                                 </div>
                             </div>
@@ -315,7 +424,7 @@
                     </div>
                 </div>
         </section>
-        <section class="cc-section-five">
+        <section class="cc-section-five py-5">
             <div class="d-flex flex-column">
                 <div>
                     <div class="text-center">
@@ -363,7 +472,7 @@
 
 
     <!-- Footer (CHARLES) -->
-    <footer class="text-center text-lg-start mt-4">
+    <footer class="text-center text-lg-start pt-5">
         <!-- Grid container -->
         <div class="container p-4">
             <!--Grid row-->
@@ -372,7 +481,7 @@
                 <div class="col-lg-5 col-md-12 mb-4 mb-md-0 p-3">
                     <h5><span class="text-warning font-weight-bold flogo">Global</span><span
                             class="text-danger font-weight-bold flogo">Chef</span></h5>
-                    <p class="mt-3 ml-5 p-text text-justify">
+                    <p class="mt-3 p-text">
                         <small>
                             Core values are the fundamental beliefs of a person or organization. The core values are the
                             guiding principles that dictate the services that we provide to our partners and students.
@@ -394,7 +503,7 @@
                 <!--Grid column-->
                 <div class="col-lg-4 col-md-6 mb-4 mb-md-0 p-4">
                     <h5 class="text-capitalize mb-0 text-light">Contact Us</h5>
-                    <div class = "mx-auto" style = "width: fit-content">
+                    <div class="mx-auto" style="width: fit-content">
                         <ul class="list-unstyled mt-3 text-left">
                             <a href="#!" class="p-text"><i class="fas fa-map-marker-alt ml-5 mr-3"
                                     style="color: red; font-size: 12px;"></i><small style="font-size: 10px;">No 12, Fola

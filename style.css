@@ -39,15 +39,19 @@ a {
     text-decoration: none;
 }
 
-a:hover{
-    color: #DA291C;
-}
-
 
 /* ============================== */
 
 header .cc-brand-icon {
     width: 30px;
+}
+
+header ul {
+    font-size: 21px;
+}
+
+header a:hover {
+    color: #ffc72c !important;
 }
 
 header .cc-hero {
@@ -96,7 +100,8 @@ section .cc-sec-one-text h3 {
 
 /* SECTION TWO */
 
-.cc-section-two, .cc-section-five {
+.cc-section-two,
+.cc-section-five {
     background: #F6F6F6;
 }
 
@@ -163,7 +168,7 @@ section .cc-chef-card {
 
 /* SECTION FIVE */
 
-section form input{
+section form input, .modal-body form input {
     width: 274px;
     margin: 0.5rem 0;
     padding: 0.6rem;
@@ -174,7 +179,11 @@ section form input{
     background: #F6F6F6;
 }
 
-textarea{
+.modal-body form input{
+    width: 100%;
+}
+
+textarea {
     width: 274px;
     margin: 0.5rem 0;
     border: 1px solid lightgrey;
@@ -182,12 +191,13 @@ textarea{
     background: #F6F6F6;
 }
 
-section form input::placeholder{
+section form input::placeholder,
+.modal-body form::placeholder {
     font-size: 10px;
     color: lightgrey;
 }
 
-section form .cc-form-icon{
+section form .cc-form-icon, .modal-body form .cc-form-icon {
     position: absolute;
     top: 10px;
     left: 0;
@@ -196,11 +206,11 @@ section form .cc-form-icon{
     min-width: 30px;
 }
 
-.cc-input-div{
+.cc-input-div {
     position: relative;
 }
 
-.cc-form-btn{
+.cc-form-btn {
     background: #DA291C;
     font-size: 14px;
 
@@ -256,6 +266,58 @@ footer {
     color: #cccccc;
 }
 
+
+/* ====================================================== */
+/* MODAL (SIGN IN AND LOG IN) */
+/* ====================================================== */
+.close-btn {
+    border: 1px solid red !important;
+    padding: 0 !important;
+    margin: 0.5rem 0 !important;
+}
+
+.cancel-bt {
+    color: #DA291C;
+    padding: 2px;
+}
+
+
+/* Broke my brand logo */
+
+/* img {
+    position: relative;
+    top: 1.5rem;
+    left: 5px;
+    height: 1rem;
+    width: 1rem;
+    /* padding: 15px; */
+} */
+
+::-webkit-input-placeholder {
+    padding-left: 1.5rem;
+}
+
+.terms {
+    padding-left: 10px;
+}
+
+.or {
+    padding-left: 14rem;
+}
+
+.red {
+    background-color: #DA291C;
+}
+
+.blue {
+    background-color: #2476B6;
+}
+
+.or-forg {
+    padding-left: 10.5rem;
+}
+
+/* ====================================================== */
 
 /* DESKTOP VIEW */
 
