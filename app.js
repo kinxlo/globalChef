@@ -1,40 +1,27 @@
-$('.owl-carousel').owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 1,
-    },
-    1000: {
-      items: 5,
-    },
-  },
+// the preloader functionality...
+
+const preloaderDiv = document.querySelector('.cc-loader')
+
+window.addEventListener('load', () => {
+  preloaderDiv.classList.add('cc-inactive')
 })
 
-const hero = document.querySelector('.cc-hero')
-const upButton = document.querySelector('.up-button')
+const playButton = document.querySelector('.cc-play-btn-div')
+const playButtonText = document.querySelector('.cc-play-btn-div p')
+const playButtonIcon = document.querySelector('.cc-play-btn-div i')
 
-const scrollUp = function () {
-  const verticalScrollValue = window.pageYOffset;
-  const heroHeight = hero.getBoundingClientRect().height
+const video = document.querySelector('video')
 
-  if (verticalScrollValue > heroHeight) {
-    showUpButton()
+playButton.addEventListener('click', () => {
+  if (video.paused) {
+    video.play()
+    playButtonText.textContent = 'pause'
+    playButtonIcon.classList.remove('fa-play')
+    playButtonIcon.classList.add('fa-pause')
   } else {
-    hideUpButton()
+    video.pause()
+    playButtonText.textContent = 'play'
+    playButtonIcon.classList.remove('fa-pause')
+    playButtonIcon.classList.add('fa-play')
   }
-}
-
-function showUpButton() {
-  upButton.classList.add("show-up-button")
-}
-
-function hideUpButton() {
-  upButton.classList.remove("show-up-button")
-}
-
-window.addEventListener('scroll', scrollUp)
+})
